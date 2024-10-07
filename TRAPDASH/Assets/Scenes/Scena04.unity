@@ -1871,6 +1871,18 @@ PrefabInstance:
       value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 5000000000000001, guid: 8e7eeb38c3f3421daf9c19dcfa7168b0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.7676575
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000000000001, guid: 8e7eeb38c3f3421daf9c19dcfa7168b0, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7676575
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000000000001, guid: 8e7eeb38c3f3421daf9c19dcfa7168b0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000000000001, guid: 8e7eeb38c3f3421daf9c19dcfa7168b0, type: 3}
       propertyPath: m_TileSpriteArray.Array.size
       value: 8
       objectReference: {fileID: 0}
