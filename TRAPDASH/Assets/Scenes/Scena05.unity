@@ -4936,6 +4936,10 @@ PrefabInstance:
       propertyPath: m_text
       value: on my way.
       objectReference: {fileID: 0}
+    - target: {fileID: 3288849127536756249, guid: 483bd9a8c57cb4f43b60534f5b127748, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4060411168934875507, guid: 483bd9a8c57cb4f43b60534f5b127748, type: 3}
       propertyPath: m_text
       value: 'Hallo ?
