@@ -31,6 +31,11 @@ public class PlayerMenager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetAxis("Fire1") > 0 )
+        {
+            PlayerPrefs.SetInt("teste", 20);
+            SceneManager.LoadScene("MenuInicial");
+        }
         textLife.text = life.ToString();
         if (life <= 0)
         {
@@ -56,6 +61,10 @@ public class PlayerMenager : MonoBehaviour
                 StartCoroutine(PlayerDeath());
             }
 
+        }
+        if(collision.gameObject.tag == "TutorialJump")
+        {
+            SceneManager.LoadScene("TutorialJump");
         }
         if (collision.gameObject.tag == "Scena01")
         {

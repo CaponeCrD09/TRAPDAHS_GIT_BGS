@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class MostrarDialogo : MonoBehaviour
 {
@@ -11,10 +12,26 @@ public class MostrarDialogo : MonoBehaviour
     public CanvasGroup dialogo;
     public CanvasGroup dialogoFinal;
 
+    //atualizando a direcao do dialogo 
+
+    public GameObject player;
+
     public static MostrarDialogo instance;
     private void Awake()
     {
         instance = this;
+        player = GameObject.Find("Player").gameObject;
+    }
+    private void Update()
+    {
+        if(player.GetComponent<PlayerMove>().direita == false)
+        {
+            player.transform.Find("CanvasMundo").transform.Find("Conversa").localScale = new Vector3(-2.29f, 2.29f, 2.29f);
+        }
+        else
+        {
+            player.transform.Find("CanvasMundo").transform.Find("Conversa").localScale = new Vector3(2.29f, 2.29f, 2.29f);
+        }
     }
 
     public void MostraDialogo()

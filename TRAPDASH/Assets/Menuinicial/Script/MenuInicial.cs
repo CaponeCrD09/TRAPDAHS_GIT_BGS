@@ -20,7 +20,7 @@ public class MenuInicial : MonoBehaviour
     public void PlayButton()
     {
         GameObject.Find("Player").GetComponent<PlayerMenager>().testando();
-        SceneManager.LoadScene("ScenaTutoria");
+        SceneManager.LoadScene("TutorualMove");
     }
     public void QuitButton()
     {
