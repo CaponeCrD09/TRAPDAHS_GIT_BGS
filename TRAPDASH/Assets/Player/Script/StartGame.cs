@@ -16,8 +16,8 @@ public class StartGame : MonoBehaviour
     {
         if(Input.anyKeyDown)
         {
-            PlayerPrefs.SetInt("teste", 20);
-            SceneManager.LoadScene("Scena01");
+            //PlayerPrefs.SetInt("teste", 20);
+            SceneManager.LoadScene("ScenaTutoria");
         }
     }
 }

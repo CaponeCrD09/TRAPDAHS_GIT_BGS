@@ -59,6 +59,7 @@ public class PlayerMenager : MonoBehaviour
         }
         if (collision.gameObject.tag == "Scena01")
         {
+            Debug.Log("Mudou?");
             PlayerPrefs.SetInt("teste",life);
             SceneManager.LoadScene("Scena01");
             transform.Find("CanvasPlayer").transform.Find("Panel_Loading").gameObject.SetActive(true);
@@ -125,6 +126,20 @@ public class PlayerMenager : MonoBehaviour
         transform.gameObject.GetComponent<SpriteRenderer>().enabled = true;
         transform.GetComponent<PlayerMove>().enabled = true;
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Dialogo")
+        {
+            MostrarDialogo.instance.MostraDialogo();
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.name == "DialogoFinal")
+        {
+            MostrarDialogo.instance.MostraDialogoFinal();
+            Destroy(other.gameObject);
+        }
     }
 
 }

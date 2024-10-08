@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuInicial.unity
     guid: 7c7c469def36fdf4b882bae40268313e
   - enabled: 1
+    path: Assets/Scenes/ScenaTutoria.unity
+    guid: 77b0d05bff97e4e4c80844be92c2f4b4
+  - enabled: 1
     path: Assets/Scenes/Scena01.unity
     guid: 01f6096aaa0c54b438cc79436005c845
   - enabled: 1
@@ -39,3 +42,4 @@ EditorBuildSettings:
     path: Assets/Scenes/ScenaFinal.unity
     guid: 576ac70ee3be75b478e60876a46725d3
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
